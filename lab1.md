@@ -17,20 +17,20 @@
 
    ```R
    > a<-"LAB" ##character
-   > a 
-   [1] "LAB"
+   > class(a)
+   [1] "character"
    > b<-6 ##numeric
-   > b
-   [1] 6
+   > class(b)
+   [1] "numeric"
    > c<-6L ##integer
-   > c
-   [1] 6
+   > class(c)
+   [1] "integer"
    > d<-1+1i ##complex
-   > d
-   [1] 1+1i
+   > class(d)
+   [1] "complex"
    > e<-T ##logical
-   > e
-   [1] TRUE
+   > class(e)
+   [1] "logical"
    ```
 
 2. Створити вектори, які: містить послідовність з 5 до75; містить числа3.14, 2.71, 0, 13; 100 значень TRUE.
@@ -80,9 +80,9 @@
    row4<-c(2,7,5.1)
    rbind(row1, row2, row3, row4) #rbind
    ```
-   
+
    output:
-   
+
    ```R
    > matrix(c(0.5, 3.9, 0, 2, 1.3, 131, 2.2, 7, 3.5, 2.8, 4.6, 5.1), ncol=3, nrow=4) ##matrix
         [,1]  [,2] [,3]
@@ -110,7 +110,6 @@
    row3  0.0   2.2  4.6
    row4  2.0   7.0  5.1
    ```
-   
 
 4. Створити довільний список (list), в який включити всі базові типи.
 
